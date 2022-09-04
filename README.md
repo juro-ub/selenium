@@ -14,7 +14,7 @@ to
 and set the path to chrome_driver
 
 # Requirements
-JDK 11
-Chrome
-Chrome Webdriver
-Netbeans 13
+- JDK 11
+- Chrome Browser
+- Chrome Webdriver
+- Netbeans 13
