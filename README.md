@@ -2,7 +2,7 @@
 
 This java modul contains an implementation to create a chrome webdriver and several functions to perfom actions on a website
 
-To test the project please copy the file 
+To test the project copy the file 
 
 ```src/test/java/resources/junit.properties.tpl```
 
