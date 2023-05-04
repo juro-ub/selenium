@@ -107,6 +107,7 @@ public class WebDriverChromeFactory {
         options.setExperimentalOption("excludeSwitches", Arrays.asList("disable-popup-blocking"));
         // options.addArguments("--incognito");
         options.addArguments("--disable-extensions");
+        options.addArguments("--remote-allow-origins=*");
 
         //Ignore headless because of clodflare protection
         if (headless) {
