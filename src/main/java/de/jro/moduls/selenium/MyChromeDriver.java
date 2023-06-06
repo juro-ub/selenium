@@ -321,16 +321,6 @@ public class MyChromeDriver extends ChromeDriver {
         }
     }
 
-    @Override
-    public void quit() {
-        try {
-            if (this.getSessionId() != null) {
-                super.quit();
-            }
-        } catch (Exception e) {
-        }
-    }
-
     public WebElement refreshElement(WebElement elem) throws Exception {
         if (!isElementStale(elem)) {
             return elem;
