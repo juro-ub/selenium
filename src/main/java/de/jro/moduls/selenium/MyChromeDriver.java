@@ -111,7 +111,7 @@ public class MyChromeDriver extends ChromeDriver {
     /*
         Click on the first element determined by @param by
     
-        Try to perform the click several times if an Exception was thrown
+        Try to perform the click several times in case an Exception was thrown
     
         Try to perform a click with javascript if the web element click action fails
     
@@ -206,10 +206,6 @@ public class MyChromeDriver extends ChromeDriver {
             }
         }
         return false;
-    }
-
-    public void dismissAlert() {
-        super.switchTo().alert().accept();
     }
 
     @Override
