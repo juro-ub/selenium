@@ -109,13 +109,10 @@ public class WebDriverChromeFactory {
         options.addArguments("--disable-extensions");
         options.addArguments("--remote-allow-origins=*");
 
-        //Ignore headless because of clodflare protection
         if (headless) {
-            //options.addArguments("--headless", "--disable-gpu");
-            //options.addArguments("--window-size=1600,1200");
+            options.addArguments("--headless", "--disable-gpu");
+            options.addArguments("--window-size=1600,1200");
         }
-        // options.setExperimentalOption("excludeSwitches",
-        // Collections.singletonList("enable-automation"));
         Map<String, Object> prefs = new HashMap<String, Object>();
         prefs.put("credentials_enable_service", false);
         prefs.put("profile.password_manager_enabled", false);
