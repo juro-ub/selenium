@@ -136,8 +136,6 @@ public class MyChromeDriver extends ChromeDriver {
     }
 
     /*
-        Try to click the element again if the element is stale
-    
         Try to perform a javascript click if an Exception was thrown
     
         return true on success
